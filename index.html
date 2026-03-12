@@ -175,7 +175,7 @@ code{font-family:"JetBrains Mono",monospace;background:#F1F3F4;padding:2px 7px;b
     <button class="nav-btn" onclick="go('dashboard',this)">📊 Dashboard</button>
     <button class="nav-btn" onclick="go('opd',this)">🏢 Tutorial OPD</button>
     <button class="nav-btn" onclick="go('pejabat',this)">👤 Tutorial Pejabat</button>
-    <button class="nav-btn" onclick="go('kolom',this)">📋 Kolom M &amp; N</button>
+    <button class="nav-btn" onclick="go('kolom',this)">📋 Status &amp; Catatan</button>
     <button class="nav-btn" onclick="go('review',this)">🔍 Checklist Review</button>
   </div>
 </nav>
@@ -219,7 +219,7 @@ code{font-family:"JetBrains Mono",monospace;background:#F1F3F4;padding:2px 7px;b
       <div class="card-body">
         <div class="step-list">
           <div class="step-item" style="border-color:#0F2847"><div class="step-num" style="background:#0F2847">1</div><div><div class="step-title">Review Dokumen Pengajuan</div><div class="step-desc">Periksa KAK/Spektek (kesesuaian Spektek–DPA), Kertas Kerja, Surat Referensi</div></div></div>
-          <div class="step-item" style="border-color:#1565C0"><div class="step-num" style="background:#1565C0">2</div><div><div class="step-title">Update Status Pengajuan</div><div class="step-desc">Isi status dan catatan di spreadsheet agar OPD dapat memantau progress</div></div></div>
+          <div class="step-item" style="border-color:#1565C0"><div class="step-num" style="background:#1565C0">2</div><div><div class="step-title">Update Status Pengajuan</div><div class="step-desc">Isi <strong>Progres Pengajuan</strong> dan <strong>Catatan Pengajuan</strong> di spreadsheet agar OPD dapat memantau progress</div></div></div>
           <div class="step-item" style="border-color:#2E7D32"><div class="step-num" style="background:#2E7D32">3</div><div><div class="step-title">Proses E-Purchasing</div><div class="step-desc">Cari produk, verifikasi penyedia, <strong>negosiasi</strong>, lalu lakukan pembelian di e-Katalog LKPP</div></div></div>
           <div class="step-item" style="border-color:#4527A0"><div class="step-num" style="background:#4527A0">4</div><div><div class="step-title">Selesai</div><div class="step-desc">Update status "Selesai Pengadaan" — proses E-Purchasing tuntas</div></div></div>
         </div>
@@ -413,13 +413,13 @@ code{font-family:"JetBrains Mono",monospace;background:#F1F3F4;padding:2px 7px;b
   </div>
 
   <div class="h2">B1. Menerima &amp; Memeriksa Pengajuan di Spreadsheet</div>
-  <div class="p">Semua pengajuan dari OPD masuk otomatis ke Google Spreadsheet sebagai baris baru. Kolom <strong>M (Status Pengajuan)</strong> dan <strong>N (Catatan)</strong> adalah kolom utama yang Anda kelola.</div>
+  <div class="p">Semua pengajuan dari OPD masuk otomatis ke Google Spreadsheet sebagai baris baru. Kolom <strong>Progres Pengajuan</strong> dan <strong>Catatan Pengajuan</strong> adalah kolom utama yang Anda kelola.</div>
   <div class="step-list">
     <div class="step-item" style="border-color:#0F2847"><div class="step-num" style="background:#0F2847">1</div><div><div class="step-title">Buka Google Spreadsheet data pengajuan</div><div class="step-desc">Akses melalui link yang telah dibagikan — data muncul otomatis dari Google Form OPD</div></div></div>
-    <div class="step-item" style="border-color:#1565C0"><div class="step-num" style="background:#1565C0">2</div><div><div class="step-title">Periksa semua dokumen pengajuan</div><div class="step-desc">Klik link di Kolom H (KAK/Spektek), I (Kertas Kerja), J (Surat Referensi) untuk mengunduh dan memeriksa</div></div></div>
-    <div class="step-item" style="border-color:#00897B"><div class="step-num" style="background:#00897B">3</div><div><div class="step-title">Verifikasi Nomor RUP di SIRUP</div><div class="step-desc">Cek di <code>sirup.lkpp.go.id</code> menggunakan nomor RUP dari Kolom F Spreadsheet</div></div></div>
-    <div class="step-item" style="border-color:#F57C00"><div class="step-num" style="background:#F57C00">4</div><div><div class="step-title">Update Status Pengajuan (Kolom M)</div><div class="step-desc">Klik sel di Kolom M pada baris pengajuan, ketik status yang sesuai hasil review</div></div></div>
-    <div class="step-item" style="border-color:#E65100"><div class="step-num" style="background:#E65100">5</div><div><div class="step-title">Isi Catatan di Kolom N</div><div class="step-desc">Tulis catatan yang jelas dan spesifik — disertai tanggal untuk tracking kronologis</div></div></div>
+    <div class="step-item" style="border-color:#1565C0"><div class="step-num" style="background:#1565C0">2</div><div><div class="step-title">Periksa semua dokumen pengajuan</div><div class="step-desc">Klik link KAK/Spektek, Kertas Kerja, dan Surat Referensi untuk mengunduh dan memeriksa</div></div></div>
+    <div class="step-item" style="border-color:#00897B"><div class="step-num" style="background:#00897B">3</div><div><div class="step-title">Verifikasi Nomor RUP di SIRUP</div><div class="step-desc">Cek di <code>sirup.lkpp.go.id</code> menggunakan nomor RUP dari spreadsheet</div></div></div>
+    <div class="step-item" style="border-color:#F57C00"><div class="step-num" style="background:#F57C00">4</div><div><div class="step-title">Update Progres Pengajuan</div><div class="step-desc">Klik sel di kolom <strong>Progres Pengajuan</strong> pada baris yang sesuai, ketik status hasil review</div></div></div>
+    <div class="step-item" style="border-color:#E65100"><div class="step-num" style="background:#E65100">5</div><div><div class="step-title">Isi Catatan Pengajuan</div><div class="step-desc">Tulis catatan yang jelas dan spesifik di kolom <strong>Catatan Pengajuan</strong> — disertai tanggal untuk tracking kronologis</div></div></div>
   </div>
 
   <div class="h2">B2. Proses E-Purchasing di e-Katalog LKPP</div>
@@ -427,8 +427,8 @@ code{font-family:"JetBrains Mono",monospace;background:#F1F3F4;padding:2px 7px;b
 
   <div class="step-list">
     <div class="step-item" style="border-color:#1565C0"><div class="step-num" style="background:#1565C0">1</div><div>
-      <div class="step-title">Update Status → "Proses E-Purchasing"</div>
-      <div class="step-desc">Isi Kolom N: <em>"[Tgl] Dokumen diterima, proses pembelian dimulai di e-Katalog LKPP."</em></div>
+      <div class="step-title">Update Progres → "Proses E-Purchasing"</div>
+      <div class="step-desc">Isi Catatan Pengajuan: <em>"[Tgl] Dokumen diterima, proses pembelian dimulai di e-Katalog LKPP."</em></div>
     </div></div>
     <div class="step-item" style="border-color:#0F2847"><div class="step-num" style="background:#0F2847">2</div><div>
       <div class="step-title">Login ke e-Katalog LKPP</div>
@@ -447,8 +447,8 @@ code{font-family:"JetBrains Mono",monospace;background:#F1F3F4;padding:2px 7px;b
       <div class="step-desc">Proses SP di e-Katalog sesuai ketentuan pengadaan yang berlaku setelah harga disepakati</div>
     </div></div>
     <div class="step-item" style="border-color:#4527A0"><div class="step-num" style="background:#4527A0">6</div><div>
-      <div class="step-title">Update Status → "Selesai Pengadaan"</div>
-      <div class="step-desc">Isi Kolom N: <em>"[Tgl] Proses E-Purchasing selesai."</em> — pengadaan tuntas.</div>
+      <div class="step-title">Update Progres → "Selesai Pengadaan"</div>
+      <div class="step-desc">Isi Catatan Pengajuan: <em>"[Tgl] Proses E-Purchasing selesai."</em> — pengadaan tuntas.</div>
     </div></div>
   </div>
 
@@ -456,8 +456,8 @@ code{font-family:"JetBrains Mono",monospace;background:#F1F3F4;padding:2px 7px;b
     <div class="callout-ico">📌</div>
     <div><div class="callout-ttl">Catatan Penting untuk Pejabat Pengadaan</div>
     <ul>
-      <li>Selalu update Kolom M &amp; N setiap ada perubahan status agar OPD dapat memantau real-time</li>
-      <li>Hubungi nomor WhatsApp PIC/PPTK (Kolom K) jika butuh klarifikasi dokumen</li>
+      <li>Selalu update Status &amp; Catatan setiap ada perubahan status agar OPD dapat memantau real-time</li>
+      <li>Hubungi nomor WhatsApp PIC/PPTK jika butuh klarifikasi dokumen</li>
       <li>Pastikan spesifikasi di e-Katalog sesuai dengan KAK/Spektek <strong>dan DPA</strong> OPD</li>
       <li>Simpan bukti seluruh tahapan proses (negosiasi, SP, dll.) untuk keperluan dokumentasi</li>
     </ul></div>
@@ -466,12 +466,12 @@ code{font-family:"JetBrains Mono",monospace;background:#F1F3F4;padding:2px 7px;b
 
 <!-- ========== KOLOM M & N ========== -->
 <div class="section" id="section-kolom">
-  <div class="sec-title">Panduan Kolom M &amp; N</div>
-  <div class="sec-sub">Dua kolom kunci yang diisi oleh Pejabat Pengadaan di Google Spreadsheet</div>
+  <div class="sec-title">Panduan Status &amp; Catatan</div>
+  <div class="sec-sub">Dua kolom yang diisi oleh Pejabat Pengadaan di Google Spreadsheet untuk komunikasi status kepada OPD</div>
 
   <div class="two-col">
     <div class="mn-col col-m">
-      <h3 style="color:#E65100">📌 Kolom M – Status Pengajuan</h3>
+      <h3 style="color:#E65100">📌 Progres Pengajuan</h3>
       <p class="p">Memberitahu OPD perkembangan pengajuan secara real-time melalui Dashboard Looker Studio.</p>
       <div class="pill-list">
         <span class="pill" style="background:#F5F5F5;color:#616161"><span>●</span> Sedang Direview</span>
@@ -483,7 +483,7 @@ code{font-family:"JetBrains Mono",monospace;background:#F1F3F4;padding:2px 7px;b
       </div>
     </div>
     <div class="mn-col col-n">
-      <h3 style="color:#1565C0">📝 Kolom N – Catatan Perbaikan &amp; Progress</h3>
+      <h3 style="color:#1565C0">📝 Catatan Pengajuan</h3>
       <p class="p">Komunikasi tertulis antara Pejabat Pengadaan dan OPD — berisi arahan perbaikan atau update progress kronologis.</p>
       <div style="background:#fff;border-radius:8px;padding:12px;font-size:.79rem;border:1px solid #DADCE0">
         <div style="padding:4px 0;border-bottom:1px solid #F0F0F0;color:#555"><em>12/03 – KAK belum ttd Kepala Dinas. Spektek tidak sesuai DPA pada item RAM.</em></div>
@@ -495,11 +495,11 @@ code{font-family:"JetBrains Mono",monospace;background:#F1F3F4;padding:2px 7px;b
   </div>
 
   <div class="card">
-    <div class="card-hd"><div class="card-ico" style="background:#FFF3E0">🗂️</div><div><div class="card-title">Panduan Pengisian Kolom M &amp; N per Status</div></div></div>
+    <div class="card-hd"><div class="card-ico" style="background:#FFF3E0">🗂️</div><div><div class="card-title">Panduan Pengisian Status &amp; Catatan per Status</div></div></div>
     <div class="card-body" style="padding:0">
       <div class="tbl-wrap" style="border-radius:0;border:none">
         <table>
-          <thead><tr><th>Status (Kolom M)</th><th>Isian Kolom N yang Disarankan</th><th>Tindak Lanjut Pejabat</th></tr></thead>
+          <thead><tr><th>Status Progres Pengajuan</th><th>Isian Catatan Pengajuan yang Disarankan</th><th>Tindak Lanjut Pejabat</th></tr></thead>
           <tbody>
             <tr><td><span class="badge" style="background:#F5F5F5;color:#616161">Sedang Direview</span></td><td><em>[Tgl] Pengajuan diterima, sedang dalam proses review dokumen.</em></td><td>Lanjutkan review semua dokumen</td></tr>
             <tr><td><span class="badge" style="background:#FFF3E0;color:#E65100">Perlu Perbaikan</span></td><td><em>[Tgl] KAK belum ttd Kepala Dinas. Spektek tidak sesuai DPA pada item [sebutkan]. Ajukan ulang setelah diperbaiki.</em></td><td>Hubungi OPD via WA untuk konfirmasi</td></tr>
@@ -515,12 +515,12 @@ code{font-family:"JetBrains Mono",monospace;background:#F1F3F4;padding:2px 7px;b
 
   <div class="callout info">
     <div class="callout-ico">💡</div>
-    <div><div class="callout-ttl">Tips Pengisian Kolom N</div>
+    <div><div class="callout-ttl">Tips Pengisian Catatan Pengajuan</div>
     <ul>
-      <li>Awali catatan dengan tanggal: <code>[DD/MM]</code> untuk tracking kronologis yang rapi</li>
-      <li>Tulis catatan yang spesifik — sebutkan item atau poin yang perlu diperbaiki</li>
-      <li>Update catatan setiap ada perkembangan penting termasuk hasil negosiasi</li>
-      <li>Kolom N berfungsi sebagai log resmi proses pengadaan dari awal hingga selesai</li>
+      <li>Awali isian Catatan Pengajuan dengan tanggal: <code>[DD/MM]</code> untuk tracking kronologis yang rapi</li>
+      <li>Tulis catatan yang spesifik — sebutkan item atau poin yang perlu diperbaiki di kolom Catatan Pengajuan</li>
+      <li>Update Catatan Pengajuan setiap ada perkembangan penting termasuk hasil negosiasi</li>
+      <li>Catatan Pengajuan berfungsi sebagai log resmi proses pengadaan dari awal hingga selesai</li>
     </ul></div>
   </div>
 </div>
@@ -603,11 +603,11 @@ code{font-family:"JetBrains Mono",monospace;background:#F1F3F4;padding:2px 7px;b
   </div>
 
   <div class="card">
-    <div class="card-hd"><div class="card-ico" style="background:#E3F2FD">📝</div><div><div class="card-title">Template Catatan Perbaikan untuk Kolom N</div><div class="card-sub">Salin dan sesuaikan dengan temuan</div></div></div>
+    <div class="card-hd"><div class="card-ico" style="background:#E3F2FD">📝</div><div><div class="card-title">Template Isian Catatan Pengajuan</div><div class="card-sub">Salin dan sesuaikan dengan kondisi/temuan</div></div></div>
     <div class="card-body" style="padding:0">
       <div class="tbl-wrap" style="border-radius:0;border:none">
         <table>
-          <thead><tr><th>Temuan</th><th>Contoh Isian Kolom N</th></tr></thead>
+          <thead><tr><th>Temuan</th><th>Contoh Isian Catatan Pengajuan</th></tr></thead>
           <tbody>
             <tr><td>KAK belum ditandatangani</td><td><em>"[Tgl] KAK belum ditandatangani dan dicap Kepala Dinas. Mohon dilengkapi dan upload ulang."</em></td></tr>
             <tr><td><strong>Spektek tidak sesuai DPA</strong></td><td><em>"[Tgl] Spesifikasi di KAK tidak sesuai DPA: RAM tertulis 8GB (DPA: 16GB). Mohon sesuaikan dengan DPA dan ajukan ulang."</em></td></tr>
